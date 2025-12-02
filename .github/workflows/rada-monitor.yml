@@ -1,10 +1,12 @@
+name: Rada Monitor
+
 on:
-  schedule:
-    - cron: "*/10 * * * *"
   workflow_dispatch:
+  schedule:
+    - cron: "*/10 * * * *"   
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
   run:
@@ -17,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
