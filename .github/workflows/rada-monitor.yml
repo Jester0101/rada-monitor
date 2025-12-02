@@ -1,10 +1,8 @@
-name: Rada Monitor
-
 on:
   schedule:
-    # запуск каждый час (UTC)
-    - cron: '*/10 * * * *'
+    - cron: "*/10 * * * *"
   workflow_dispatch:
+
 permissions:
   contents: write 
 
