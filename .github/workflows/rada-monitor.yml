@@ -4,8 +4,6 @@ on:
   schedule:
     # запуск каждый час (UTC)
     - cron: '*/10 * * * *'
-  # возможность запустить руками с кнопки "Run workflow"
-  workflow_dispatch:
 permissions:
   contents: write 
 
