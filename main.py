@@ -317,17 +317,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import time
-
-    print("[INFO] Запуск бота-мониторинга Рады (каждый час)")
-
-    while True:
-        try:
-            main()
-        except Exception as e:
-            # чтобы бот не умирал от одной ошибки
-            print(f"[ERROR] Во время выполнения main() произошла ошибка: {e}")
-
-        # Ждать 1 час (3600 секунд)
-        print("[INFO] Сон 1 час до следующей проверки...")
-        time.sleep(3600)
+    main()
