@@ -6,6 +6,8 @@ on:
     - cron: '0 * * * *'
   # возможность запустить руками с кнопки "Run workflow"
   workflow_dispatch:
+permissions:
+  contents: write 
 
 jobs:
   run:
