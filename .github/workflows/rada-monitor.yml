@@ -3,7 +3,7 @@ name: Rada Monitor
 on:
   schedule:
     # запуск каждый час (UTC)
-    - cron: '0 * * * *'
+    - cron: "*/2 * * * *"
   # возможность запустить руками с кнопки "Run workflow"
   workflow_dispatch:
 permissions:
